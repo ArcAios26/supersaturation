@@ -91,11 +91,11 @@ public class SuperSatEventHandler {
                                 float toAdd = Math.min(needed, (food.getNutrition() - addedHunger));
                                 if (saturationLevel == null) {
                                     try {
-                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "saturationLevel");
+                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "ield_75125_b");
                                     } catch(java.lang.NoSuchMethodError e) {
-                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "foodSaturationLevel");
+                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "saturationLevel");
                                     } catch (java.lang.NoSuchFieldError e) {
-                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "foodSaturationLevel");
+                                        saturationLevel = ObfuscationReflectionHelper.findField(FoodStats.class, "saturationLevel");
                                     }
                                 }
                                 try {
